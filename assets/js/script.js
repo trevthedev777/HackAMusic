@@ -39,17 +39,6 @@ function questionCounter(index) {
   question_counter.innerHTML = question_counter_content;
 }
 
-// Update progress and timestamp
-// function updateProgress() {
-//     // Gives us the slide progress bar
-//     let progressBar = document.getElementById('sample-progress-bar');
-//     progress.value = (audio.start / audio.duration) * 100;
-
-//     if (audio.start == 0) {
-      
-//     }
-
-// };
 
 /* Function to set inner html with the content from the questions this
 function is just the base logic to understand what the game should do, it will be changed
@@ -85,7 +74,7 @@ function PlaySound(event) {
 }
 
 function updatePlayIcon(){
-    if (song.paused) {
+    if (audio.paused) {
         play.innerHTML = "<i class='fa fa-pause fa-2x'></i>";
     } else {
         song.innerHTML = "<i class='fa fa-play fa-2x'></i>"

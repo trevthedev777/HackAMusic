@@ -2,8 +2,8 @@
 let que_count = 0;
 let current_level = 1;
 let next_btn = document.querySelector(".lv-test");
-const levelText = document.getElementById('#level');
-const play = document.getElementById("play");
+let levelText = document.getElementById('#level');
+let play = document.getElementById("play");
 
 // CAPITALIZED vars mean the value is immutable
 const MAX_SCORE_POINTS = 10;
@@ -77,7 +77,7 @@ function updatePlayIcon(){
     if (audio.paused) {
         play.innerHTML = "<i class='fa fa-pause fa-2x'></i>";
     } else {
-        song.innerHTML = "<i class='fa fa-play fa-2x'></i>"
+        play.innerHTML = "<i class='fa fa-play fa-2x'></i>"
     }
 };
 

@@ -21,7 +21,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Title</title>
+    <title>Game Screen</title>
     <script src="assets/js/script.js" defer></script>
   </head>
 
@@ -58,18 +58,18 @@
         <div class="row height-div w-75 mx-auto my-3 btn-flex-display border">
           <div class="level">
             <h2>LEVEL</h2>
-            <span class="level-current text-white">1</span>
+            <span class="level-current text-white" id="level">1</span>
           </div>
           <div class="score">
             <h2>SCORE</h2>
-            <span class="level-score text-white">0</span>
+            <span class="level-score text-white" id="score">0</span>
           </div>
         </div>
         <div class="row height-div w-75 mx-auto my-3 btn-flex-display border">
           <div class="btn-play"><i class="fas fa-play"></i></div>
           <div class="w-75 border sample-slider-container">
             <div class="sample-slider">
-              <input type="range" value="0" class="sample-progress-bar" />
+              <input type="range" value="0" class="sample-progress-bar" id="progress-bar"/>
             </div>
           </div>
         </div>
